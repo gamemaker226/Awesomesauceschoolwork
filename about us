@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - PJA & CMB Games</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your main CSS file for styling -->
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <h1>About Us</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="games.html">Games</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <section>
+            <h2>Who We Are</h2>
+            <p>Welcome to PJA & CMB Games! We're two friends, PJA and CMB, who love to play and share unblocked games with others. Our website is designed to provide a fun and easy place to enjoy your favorite
