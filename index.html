@@ -1,0 +1,34 @@
+﻿var htmlContent = `<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My First Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #3498db;
+            color: white;
+            text-align: center;
+            padding-top: 50px;
+        }
+        h1 {
+            font-size: 48px;
+        }
+        p {
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to PJA & CMB SCHOOL WORK🎉</h1>
+    <p>This is a simple website I built with HTML and CSS.</p>
+</body>
+</html>`;
+
+
+var blob = new Blob([htmlContent], {type: 'text/html'});
+var link = document.createElement("a");
+link.href = URL.createObjectURL(blob);
+link.download = "index.html";
+link.click();
