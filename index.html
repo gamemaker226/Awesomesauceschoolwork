@@ -21,24 +21,49 @@
       background-color: #3498db; /* A nice shade of blue */
       color: white;
       font-family: Arial, sans-serif;
+      text-align: center;
     }
 
     h1 {
-      text-align: center;
+      margin-top: 20px;
     }
 
     p {
-      text-align: center;
+      font-size: 18px;
+      margin-top: 20px;
     }
 
-    /* Add some spacing between sections */
-    section {
-      margin: 20px 0;
+    .button-container {
+      margin-top: 40px;
+    }
+
+    button {
+      background-color: #2ecc71; /* Green buttons */
+      color: white;
+      font-size: 18px;
+      padding: 15px 30px;
+      margin: 10px;
+      border: none;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #27ae60;
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    footer {
+      margin-top: 40px;
+      font-size: 14px;
     }
   </style>
 </head>
 
 <body>
+
   <!-- Header Section -->
   <header>
     <h1>PJA & CMB GAMES</h1>
@@ -59,27 +84,21 @@
     </section>
 
     <section>
-      <h2>Featured Games</h2>
-      <div class="game-gallery">
-        <a href="game1.html">
-          <img src="game1-thumbnail.jpg" alt="Game 1" height="150">
-          <p>Game 1</p>
-        </a>
-        <a href="game2.html">
-          <img src="game2-thumbnail.jpg" alt="Game 2" height="150">
-          <p>Game 2</p>
-        </a>
-        <a href="game3.html">
-          <img src="game3-thumbnail.jpg" alt="Game 3" height="150">
-          <p>Game 3</p>
-        </a>
-      </div>
-    </section>
-
-    <section>
       <h2>Join the Unblock Games Union (UBGU)</h2>
       <p>We are proud members of the <a href="https://ubgameunion.neocities.org/" target="_blank">
           <img src="https://ubgameunion.neocities.org/UBGU%20Member.svg" height="150" width="auto" alt="UBGU Member Logo"></a></p>
+    </section>
+
+    <!-- Game Selection Section -->
+    <section>
+      <h2>Choose a Game to Play</h2>
+      <div class="button-container">
+        <a href="game1.html"><button>Super Mario 64</button></a>
+        <a href="game2.html"><button>Minecraft</button></a>
+        <a href="game3.html"><button>Roblox</button></a>
+        <a href="game4.html"><button>Pac-Man</button></a>
+        <a href="game5.html"><button>Tetris</button></a>
+      </div>
     </section>
   </main>
 
@@ -87,6 +106,7 @@
   <footer>
     <p>&copy; 2025 PJA & CMB Games. All rights reserved.</p>
   </footer>
+
 </body>
 
 </html>
