@@ -6,6 +6,9 @@
   <title>Welcome to PJA & CMB Games 🎮</title>
   <link rel="icon" href="favicon.ico" type="image/x-icon">
 
+  <!-- Particle.js CDN -->
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+
   <style>
     * {
       margin: 0;
@@ -13,17 +16,17 @@
       box-sizing: border-box;
     }
 
-    body, html {
+    html, body {
       height: 100%;
       font-family: 'Arial', sans-serif;
       overflow: hidden;
+      background: #000;
     }
 
     #particles-js {
       position: absolute;
       width: 100%;
       height: 100%;
-      background: #000;
       z-index: -1;
     }
 
@@ -40,6 +43,12 @@
     .logo {
       width: 120px;
       margin-bottom: 30px;
+      animation: float 2s ease-in-out infinite;
+    }
+
+    @keyframes float {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
     }
 
     h1 {
@@ -70,41 +79,64 @@
   <div class="container">
     <img src="logo.png" alt="Logo" class="logo" />
     <h1>Welcome to PJA & CMB Games 🎮</h1>
-    <button class="enter-btn" onclick="location.href='index.html'">Enter Site</button>
+    <button class="enter-btn" onclick="location.href='home.html'">Enter Site</button>
   </div>
 
-  <!-- Particles.js script -->
-  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
   <script>
     particlesJS("particles-js", {
       particles: {
-        number: { value: 80 },
+        number: {
+          value: 100,
+          density: {
+            enable: true,
+            value_area: 800
+          }
+        },
         color: { value: "#ffffff" },
         shape: {
-          type: "circle",
+          type: "circle"
         },
         opacity: {
           value: 0.5,
-          random: true,
+          random: true
         },
         size: {
-          value: 3,
-          random: true,
+          value: 4,
+          random: true
         },
         move: {
           enable: true,
           speed: 2,
+          direction: "none",
+          random: false,
+          straight: false,
+          out_mode: "out"
         }
       },
       interactivity: {
         detect_on: "canvas",
         events: {
-          onhover: { enable: true, mode: "repulse" },
+          onhover: {
+            enable: true,
+            mode: "repulse"
+          },
+          onclick: {
+            enable: true,
+            mode: "push"
+          },
+          resize: true
         },
         modes: {
-          repulse: { distance: 100 }
+          repulse: {
+            distance: 100,
+            duration: 0.4
+          },
+          push: {
+            particles_nb: 4
+          }
         }
-      }
+      },
+      retina_detect: true
     });
   </script>
 
