@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Window 7</title>
+
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #3498db; /* Blue background */
+      color: white;
+      font-family: Arial, sans-serif;
+      text-align: center;
+    }
+
+    iframe {
+      width: 800px;
+      height: 600px;
+      border: none;
+      margin-top: 20px;
+    }
+
+    .back-link {
+      margin-top: 20px;
+      text-decoration: none;
+      color: white;
+      font-size: 18px;
+    }
+
+    .back-link:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Window 7</h1>
+
+  <!-- Embed the game -->
+  <iframe src="https://teachers-are-the-best.neocities.org/win7" title="Window 7"></iframe>
+
+  <!-- Back link to go to the main page -->
+  <p><a href="index.html" class="back-link">Back to Home</a></p>
+
+</body>
+</html>
